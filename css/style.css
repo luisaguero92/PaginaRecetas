@@ -1,3 +1,7 @@
+*{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
 body {
     background-color: beige;
     
@@ -48,3 +52,62 @@ a:link, a:visited, a:active {
 h2{
     text-align: center;
 }
+
+.formregistro{
+    text-align: center;
+}
+
+.imgCenter{
+    display:block;
+    margin:auto;
+    }
+
+.mainContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: auto;
+        align-content: start
+      }
+ .Container {
+        flex: 0 0 auto;
+        margin: 10px;
+      }
+
+/***************************************************/
+/*         Media queries 600px                     */
+/****************************************************/
+@media screen and (max-width: 600px) {
+    .mainContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: auto;
+        align-content: center
+      }
+      .Container {
+        flex: 0 0 auto;
+        margin: 10px;
+      }
+      .topnav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: start;
+        align-items: auto;
+        align-content: center
+    }
+    .button {
+      flex: 0 0 auto;
+      margin: 1px;
+    }
+  }
+
+/***************************************************/
+/*         Media queries 992px                     */
+/****************************************************/
+@media screen and (max-width: 992px) {
+
+  }
