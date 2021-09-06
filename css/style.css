@@ -15,31 +15,32 @@ nav{
     background-color: rgb(161, 180, 219);
 }
 .button {
-    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background: white;
     border: 1px solid black;
-    border-radius: 12 px;
-    padding: 3px 16px;
+    border-radius: 20px;
+    padding: 10px 35px;
     font-size: 14px;
 }
 
 .button:hover {
-    background-color: rgb(161, 180, 219);
+    background: rgb(161, 180, 219);
     color: white;
 }
-
+.button:active{
+    background: white;
+}
 footer {
     background-color: rgb(161, 180, 219);
     text-align: center;
 }
 
-table{
-    border-collapse: collapse;
-    text-align: justify;
+.textcenter {
     text-align: center;
 }
-table, td, th {
-    border: 1px solid black;
-  }
 .center {
     margin-left: auto;
     margin-right: auto;
@@ -62,7 +63,7 @@ h2{
     margin:auto;
     }
 
-.mainContainer {
+    .mainContainer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
