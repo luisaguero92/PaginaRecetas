@@ -8,14 +8,15 @@ function validarFormulario(evento) {
     var nombre = document.getElementById('Nombre').value;
     if (nombre.length == 0) {
         alert('No has escrito nada en el Nombre');
-        nombre.style.backgroundColor = '#999999';
+        Nombre.style.borderColor = '#ff0000';
         return;
     }
 
     var clave1 = document.getElementById('Password1').value;
     if (clave1.length < 6) {
         alert('La clave no es válida');
-        clave1.style.backgroundColor = '#999999'
+        
+        clave1.style.backgroundColor = '#ff0000'
         return;
     }
 
