@@ -1,6 +1,6 @@
-/*
+
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("formulario").addEventListener("submit", validarFormulario);
+    document.getElementById("fvalidation").addEventListener("submit", validarFormulario);
 });
 
 function validarFormulario(evento) {
@@ -8,17 +8,34 @@ function validarFormulario(evento) {
     var nombre = document.getElementById('Nombre').value;
     if (nombre.length == 0) {
         alert('No has escrito nada en el Nombre');
+        nombre.style.backgroundColor = '#999999';
         return;
     }
-    var clave = document.getElementById('inputPassword4').value;
-    if (clave.length < 6) {
+
+    var clave1 = document.getElementById('Password1').value;
+    if (clave1.length < 6) {
         alert('La clave no es válida');
+        clave1.style.backgroundColor = '#999999'
         return;
     }
+
+    var clave2 = document.getElementById('Password2').value;
+    if (clave2.length < 6) {
+        alert('La clave 2 no es válida');
+        return;
+    }
+
+    if(clave1 !== clave2){
+        alert('La contraseñas no son iguales');
+        return;
+    }
+
     this.submit();
+    alert("Muchas gracias por enviar el formulario");
 }
-*/
-   
+
+
+/*
 function valida_envia(){
     //valido el nombre
     if (document.fvalidation.Nombre.value.length==0){
@@ -28,29 +45,30 @@ function valida_envia(){
     }
  
     //valido la edad. tiene que ser entero mayor que 18
-    edad = document.fvalida.edad.value
+    edad = document.fvalidation.edad.value
     edad = validarEntero(edad)
-    document.fvalida.edad.value=edad
+    document.fvalidation.edad.value=edad
     if (edad==""){
            alert("Tiene que introducir un número entero en su edad.")
-           document.fvalida.edad.focus()
+           document.fvalidation.edad.focus()
            return 0;
     }else{
            if (edad<18){
                   alert("Debe ser mayor de 18 años.")
-                  document.fvalida.edad.focus()
+                  document.fvalidation.edad.focus()
                   return 0;
            }
     }
  
     //valido el interés
-    if (document.fvalida.interes.selectedIndex==0){
+    if (document.fvalidation.interes.selectedIndex==0){
            alert("Debe seleccionar un motivo de su contacto.")
-           document.fvalida.interes.focus()
+           document.fvalidation.interes.focus()
            return 0;
     }
  
     //el formulario se envia
     alert("Muchas gracias por enviar el formulario");
-    document.fvalida.submit();
+    document.fvalidation.submit();
 }
+*/
