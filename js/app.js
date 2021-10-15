@@ -9,20 +9,24 @@ function validarFormulario(evento) {
     if (nombre.length == 0) {
         alert('No has escrito nada en el Nombre');
         Nombre.style.borderColor = '#ff0000';
-        return;
+    } else {
+        Nombre.style.borderColor = '#008f39';
     }
+    
 
     var clave1 = document.getElementById('Password1').value;
     if (clave1.length < 6) {
         alert('La clave no es válida');
-        
-        clave1.style.backgroundColor = '#ff0000'
+
+        Password1.style.borderColor = '#ff0000'
         return;
     }
 
     var clave2 = document.getElementById('Password2').value;
     if (clave2.length < 6) {
         alert('La clave 2 no es válida');
+        Password1.style.borderColor = '#008f39'
+        Password2.style.borderColor = '#ff0000'
         return;
     }
 
@@ -31,6 +35,21 @@ function validarFormulario(evento) {
         return;
     }
 
+    var direccion = document.getElementById('inputDireccion').value;
+    if (direccion.length == 0) {
+        alert('No has escrito nada en la Direccion');
+        Password2.style.borderColor = '#008f39'
+        inputDireccion.style.borderColor = '#ff0000';
+        return;
+    }
+
+    var ciudad = document.getElementById('inputCity').value;
+    if (ciudad.length == 0) {
+        alert('No has escrito nada en la Ciudad');
+        inputDireccion.style.borderColor = '#008f39';
+        inputCity.style.borderColor = '#ff0000';
+        return;
+    }
     this.submit();
     alert("Muchas gracias por enviar el formulario");
 }
