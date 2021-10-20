@@ -84,6 +84,9 @@ div.topnav_drop>div.dropdown >div.dropdown-content>a>i{
     display:block;
     margin:auto;
     }
+.imgRadius{
+    border-radius: 50px;
+}
     body > div > div.grid_main > div > div > a > p{
         color: rgb(57, 62, 70);
     }
@@ -190,6 +193,7 @@ div.topnav_drop>div.dropdown >div.dropdown-content>a>i{
 }
 .recipe_img1 { 
     grid-area: recipe_img1;
+    border-radius: 10%;
     padding: 10px;
 }
 .recipe2 { 
