@@ -6,14 +6,8 @@
     background-color: rgb(238, 238, 238);
     
  }
- header{
-    background-color: rgb(49, 96, 199);
-    color: beige;
-    text-align: center;
- }
- nav, .topnav_drop{
-    background-color: rgb(161, 180, 219);
- }
+ 
+
  .topnav_drop{
     display: none;
  }
@@ -37,16 +31,26 @@
     border-radius: 5px;
     border-style:inset;
  }
- .button:hover {
+ .button:hover,.button>a>i:hover {
     background: rgb(0, 173, 181);
-    color: white;
+    color: rgb(57, 62, 70);
  }
  .button:active{
     background: white;
  }
- 
+ .img_rec {
+    border: solid 3px transparent;
+    margin: -3px;
+}
+.img_rec:hover {
+    border: solid 3px rgb(0, 173, 181);
+}
  .textcenter {
     text-align: center;
+ }
+ .list{
+    text-align: left;
+    display:inline-block;
  }
  .center {
     margin-left: auto;
@@ -62,11 +66,17 @@
  div.topnav >a>i{
      color: rgb(57, 62, 70);
  }
- h2{
-    text-align: center;
- }
+ div.topnav_drop >a>i{
+    color: rgb(57, 62, 70);
+}
+div.topnav_drop>div.dropdown>button>i{
+    color: rgb(57, 62, 70);
+}
 
- .formregistro{
+div.topnav_drop>div.dropdown >div.dropdown-content>a>i{
+    color: rgb(57, 62, 70);
+}
+ h2{
     text-align: center;
  }
 
@@ -74,7 +84,13 @@
     display:block;
     margin:auto;
     }
+    body > div > div.grid_main > div > div > a > p{
+        color: rgb(57, 62, 70);
+    }
 
+ /********************************************************/
+/*                    Flex-Box                          */
+/********************************************************/     
     .mainContainer {
         display: flex;
         flex-wrap: wrap;
@@ -83,7 +99,9 @@
         align-items: auto;
         align-content: start
       }
- .Container {
+     .Container {
+        font-weight: bold;
+        font-size: large;
         flex: 0 0 auto;
         margin: 10px;
       }
@@ -164,7 +182,8 @@
     grid-area: recipe1; 
     border-style: none;
     text-align: center;
-    background-color: rgb(0, 173, 181) ;
+    background-color:rgb(0, 173, 181);
+    color: white;
     border-radius: 50px;
     margin: 5px;
     padding: 100px;
@@ -177,7 +196,8 @@
     grid-area: recipe2; 
     border-style: none;
     text-align: center;
-    background-color: rgb(227, 231, 238) ;
+    background-color: rgb(0, 173, 181) ;
+    color: white;
     border-radius: 50px;
     margin: 5px;
     padding: 100px;
@@ -190,7 +210,8 @@
     grid-area: recipe3; 
     border-style: none;
     text-align: center;
-    background-color: rgb(227, 231, 238) ;
+    background-color: rgb(0, 173, 181) ;
+    color: white;
     border-radius: 50px;
     margin: 5px;
     padding: 100px;
@@ -203,7 +224,8 @@
     grid-area: recipe4; 
     border-style: none;
     text-align: center;
-    background-color: rgb(227, 231, 238) ;
+    background-color: rgb(0, 173, 181) ;
+    color: white;
     border-radius: 50px;
     margin: 5px;
     padding: 80px;
@@ -216,10 +238,11 @@
     grid-area: recipe5; 
     border-style: none;
     text-align: center;
-    background-color: rgb(227, 231, 238) ;
+    background-color: rgb(0, 173, 181) ;
+    color: white;
     border-radius: 50px;
     margin: 5px;
-    padding: 80px;
+    padding: 120px;
 }
 .recipe_img5 { 
     grid-area: recipe_img5; 
@@ -229,7 +252,8 @@
     grid-area: recipe6; 
     border-style: none;
     text-align: center;
-    background-color: rgb(227, 231, 238) ;
+    background-color: rgb(0, 173, 181);
+    color: white;
     border-radius: 50px;
     margin: 5px;
     padding: 100px;
@@ -241,6 +265,7 @@
 .footer_rec { 
     grid-area: footer_rec; 
     background-color: rgb(57, 62, 70); ;
+    color: white;
     text-align: center;
 }
 
