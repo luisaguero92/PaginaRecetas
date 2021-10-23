@@ -1,6 +1,10 @@
-/***************************************************/
-/*         Media queries 992px                     */
-/****************************************************/
+/************************************************************************************/
+/*                           Media query 992px                                      */
+/************************************************************************************/
+/* En este media query se oculto el navbar completo y se uso un dropdown sin bootstrap
+   La mayoria de los componentes ya fueron definidos en la query de pc  */
+
+
 @media only screen and (max-width: 992px) {
     /********************************************************/
    /*    Grid container Paginas General CSS                 */
@@ -12,8 +16,6 @@
          'topnav_drop topnav_drop'
          'grid_main  grid_main'
          'grid_footer grid_footer';
-       border-color: green; /* Lo uso durante desarrollo para verificar que cosa estoy cambiando*/
-       border-style: solid;
        grid-gap: 0px;
        width: 100%;
      }
@@ -40,8 +42,6 @@
             'recipe5  recipe_img5'
             'recipe6  recipe_img6'
             'footer_rec  footer_rec';
-           border-color: green; /* Lo uso durante desarrollo para verificar que cosa estoy cambiando*/
-           border-style: solid;
            grid-gap: 0px;
            width: 100%;
          }
@@ -87,10 +87,11 @@
         
    }
    
-   
-   /***************************************************/
-   /*         Media queries 600px                     */
-   /****************************************************/
+/************************************************************************************************/
+/*                                  Media query 600px                                           */
+/************************************************************************************************/
+/* En este Query si se modifico la posicion de los componentes del grid para que sea responsive*/
+
    @media only screen and (max-width: 600px) {
     /********************************************************/
     /*    Grid container Paginas General CSS                 */
@@ -102,8 +103,6 @@
          'topnav_drop'
          'grid_main'
          'grid_footer';
-       border-color: orange; /* Lo uso durante desarrollo para verificar que cosa estoy cambiando*/
-       border-style: solid;
        grid-gap: 0px;
        width: 100%;
      }
@@ -136,8 +135,6 @@
             'recipe6'
            'recipe_img6'
             'footer_rec' ;
-           border-color: orange; /* Lo uso durante desarrollo para verificar que cosa estoy cambiando*/
-           border-style: solid;
            grid-gap: 0px;
            width: 100%;
        }

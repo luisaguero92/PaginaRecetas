@@ -1,15 +1,32 @@
- *{
+*{
     font-family: 'IBM Plex Sans KR', sans-serif;
  }
 
+  /*Sin esto el grid de la pagina no cubre el 100*/
+ html, body {  
+   margin:0px;  
+   height:100%;  
+ }  
+
+
  body {
     background-color: rgb(238, 238, 238);
-    
  }
- 
+  
+   /*Esto oculta el navBar del query de dispositivo (sin bootstrap)*/
  .topnav_drop{
     display: none;
  }
+ 
+
+/*Para quitar el subrayado de los links*/
+a:link, a:visited, a:active {
+   text-decoration:none;
+}
+
+ /******************************************************************/
+ /*           Animaciones de botones e imagenes                    */
+ /******************************************************************/
  .button {
     color: rgb(57, 62, 70);
     font-weight: bold;
@@ -44,32 +61,29 @@
 }
 .img_rec:hover {
     border: solid 3px rgb(0, 173, 181);
+    box-shadow: 0px 0px 8px 1px rgba(0, 173, 181,0.59);
 }
 
- .textcenter {
-    text-align: center;
- }
- .list{
-    text-align: left;
-    display:inline-block;
- }
- .center {
-    margin-left: auto;
-    margin-right: auto;
-  }
- /*Para quitar el subrayado */
- a:link, a:visited, a:active {
-    text-decoration:none;
- }
-
+/* Para darle color a los i del footer sin romper al de los botones */
  body > div > div.grid_footer > a> i,body > div > div.footer_rec > a>i{
     color: white;
 }
- 
- h2{
-    text-align: center;
- }
 
+/******************************************************************/
+ /*  Otras propiedades adicionales (margen, alineado, bordes,etc   */
+ /******************************************************************/
+.textcenter {
+   text-align: center;
+}
+.list{
+   text-align: left;
+   display:inline-block;
+}
+.center {
+   margin-left: auto;
+   margin-right: auto;
+ }
+ 
  .imgCenter{
     display:block;
     margin:auto;
@@ -77,12 +91,12 @@
 .imgRadius{
     border-radius: 20px;
 }
-    body > div > div.grid_main > div > div > a > p{
-        color: black
-    }
+body > div > div.grid_main > div > div > a > p{
+color: black
+}
 
  /********************************************************/
-/*        Flex-Box Usado en la pag Contacto              */
+/*Flex-Box Usado en las pag contacto.html y recetas.html */
 /********************************************************/     
     .mainContainer {
         display: flex;
@@ -94,7 +108,7 @@
       }
      .Container {
         font-weight: bold;
-        font-size: large;
+        font-size: medium;
         flex: 0 0 auto;
         margin: 10px;
       }
